@@ -1,0 +1,68 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SmartCity.Server
+</name>
+</assembly>
+<members>
+<member name="T:SmartCity.Server.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:SmartCity.Server.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:SmartCity.Server.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="M:SmartCity.Server.BootloaderTasksMonitor.AddTask(System.String,System.String)">
+ <summary>
+ Добавить задачу обновления в очередь
+ </summary>
+ <param name="deviceId">Целевое устройство</param>
+ <param name="hexPath">Путь до HEX файла</param>
+</member>
+<member name="M:SmartCity.Server.BootloaderTasksMonitor.GetAccessPoint(System.String)">
+ <summary>
+ Возвращает ID точки доступа с максимальным уровнем сигнала
+ </summary>
+ <param name="deviceId">Идентификатор устройства</param>
+ <returns>Идентификатор точки доступа</returns>
+</member>
+<member name="T:SmartCity.Server.BootloadrAuxiliaryProccess">
+ <summary>
+ Вспомогательный класс для работы загрузчика. Проверяет и детектирует выполнение текущих задач прошивки конкретного устройства
+ </summary>
+</member>
+<member name="M:SmartCity.Server.FirmwareUpdateTask.isComplete">
+ <summary>
+ Проверка завершения работы загрузчика
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:SmartCity.Server.FirmwareUpdateTask.EnterBootMode">
+ <summary>
+ Вводим устройство в режим загрузчика, отправляя ключевую пследоавтельность раз в секунду
+ </summary>
+</member>
+<member name="M:SmartCity.Server.FirmwareUpdateTask.StartMainApplication">
+ <summary>
+ Запускаем основной код
+ </summary>
+</member>
+<member name="M:SmartCity.Server.Tool.DecodeHexData(System.String)">
+ <summary>
+ Переводим строку HEX в массив байт
+ </summary>
+ <param name="hex">Строка с HEX данными</param>
+ <returns></returns>
+</member>
+</members>
+</doc>

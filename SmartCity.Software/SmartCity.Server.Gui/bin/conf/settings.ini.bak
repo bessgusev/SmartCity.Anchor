@@ -1,0 +1,5 @@
+[Application]
+SQL Base name=smartcity
+SQL User=smartcity
+SQL Password=password
+TCP port=8520

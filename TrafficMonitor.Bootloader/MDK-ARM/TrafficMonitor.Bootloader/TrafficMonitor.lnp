@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"trafficmonitor.bootloader\stm32f1xx_hal_spi.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_gpio.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_tim.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_tim_ex.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_cortex.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_crc.o"
+"trafficmonitor.bootloader\stm32f1xx_hal.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_dma.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_rcc.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_rcc_ex.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_pwr.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_flash.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_gpio_ex.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_flash_ex.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_spi_ex.o"
+"trafficmonitor.bootloader\system_stm32f1xx.o"
+"trafficmonitor.bootloader\startup_stm32f103xe.o"
+"trafficmonitor.bootloader\stm32f1xx_hal_msp.o"
+"trafficmonitor.bootloader\main.o"
+"trafficmonitor.bootloader\stm32f1xx_it.o"
+"trafficmonitor.bootloader\bootloader.o"
+"trafficmonitor.bootloader\lora.o"
+--library_type=microlib --strict --scatter "TrafficMonitor.Bootloader\TrafficMonitor.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TrafficMonitor.map" -o TrafficMonitor.Bootloader\TrafficMonitor.Bootloader
